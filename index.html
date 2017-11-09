@@ -1,21 +1,87 @@
 <!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <title>Hello World</title>
-    <script src="https://unpkg.com/react@latest/dist/react.js"></script>
-    <script src="https://unpkg.com/react-dom@latest/dist/react-dom.js"></script>
-    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="text/babel">
-
-      ReactDOM.render(
-        <h1>Hello, world!</h1>,
-        document.getElementById('root')
-      );
-
-    </script>
-  </body>
+    <head>
+        <title>Yasaman Emami</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+        
+    </head>
+    <body id="body_bckgrnd">
+        <br>
+        <h1 id="main_heading">Yasaman Emami </h1>
+        <h2 class="sub_header"> Researcher | Data Scientist | Software Engineer</h2>
+            
+        <br>
+        <div class="box-style">
+            <div class="box-header">EEG Analysis of Evoked Potentials of the brain for classification of EEG signals of Normal Subjects vs Tinnitus</div>
+            This project started with a problem defined as there is no cure for Tinnitus, so this question raised is there any diagnosis methods so that it may help find the root cause.
+            I started working as a research assistant in University of Arkansas working on this issue for 2 years to recommend a solution. An effort that evolved as my master thesis.
+            In this research I was using noninvansive way of collecting data through EPOC EMOTIV from 12 subjects mixed in Normal and suffering from Tinnitus. 
+            <br> <br> <br> <br> <br> <br> <br>      
+            Keywords: Data Mining, Machine Learning, EEG, Tinnitus
+            
+        </div><br><br>
+        <div class="box-style">
+            <div class="box-header">HyperDrive</div>
+            
+            Local search algorithm is based on some function. First of all it get initial point to
+            start and the by using of genNeighbore function it start to searching the area
+            around the initial point. So as a result the performance of this search is mostly
+            related to how accurate initial point is. An idea to enhance the performance of this
+            algorithm is using of another AI algorithm like GA for initialization and to make a
+            better guess for selecting the initial point. This way the cost of search would be
+            much lower. In this work local search start to walk around the initial point and it
+            find the neighbors by hamming code and flapping the index of input area.
+            The error function is actually calculating how much our predictions were off,
+            therefore the key to solving this problem is to minimize our error function, in other
+            words make it as small as possible, and in order to do that we have to select the
+            right values for our parameters.
+            Local search selects actions which decrease the value of input parameter,
+            eventually absorbing at a state with a locally minimum cost. But input parameter is
+            not the optimal value function for the local search problem, whose objective is to
+            reach the lowest-cost absorbing state. We can adopt a learning algorithm with a
+            function approximator can learn an approximate optimal value function, feedback
+            result, thereby producing an enhanced search algorithm that is locally guided by
+            feedback result instead of by input parameter.
+            <br> <br> <br>  
+            Keywords: AI, Greedy Algorithms, Search Algorithms
+        </div>
+        <br>
+        <br>
+        <div class="box-style">
+            <div class="box-header">Implementation of Hidden Markov Model for horse race prediction</div>
+            Predicting a horse race through implementing a hidden markov model
+        </div>
+        <br>
+        <br>
+        <div class="box-style">
+            <div class="box-header">Implementation of BayesianNetwork</div>
+                For calculating the exact inference please run BayesianNetwork.m
+                generateSample.m is generating 1000 samples in csv file and reject the rows that the value of H or M is not equal to 1.
+                Createnode.m is for calculation the probability for nodes that doesn’t have parent.(probability = MeanValue)
+                twoParents.m is for calculating node p Probability that has two parents.
+                Threeparents.m for node “c” ,which is connected to two other nodes.
+                To see the approximate Inference results Please run ApproximateInference.m after you choose if you want the results for H or M the program starts running and generating samples. 
+                But because my computer is so slow I couldn’t get the final result.
+        </div>
+        <br>
+        <br>
+        <div class="box-style">
+            <div class="box-header">Implementation of K- Nearest Neighbor</div>
+            Classifiction of unknown data on a training data set using K-nearest neighbor run knn.m using the csv file
+        </div>
+        <br>
+        <br>
+        <div class="box-style">
+            <div class="box-header">Implementation of PHP base web application for YUBIKEY as a second factor of authentication</div>
+            Demonstrating Yubikey Security system as a second factor authentication through implementing a PHP website
+        </div>
+    </body>
 </html>
